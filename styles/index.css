@@ -1,0 +1,674 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+#downbody{
+    background-image: linear-gradient(to bottom,rgb(255,255,255,1), rgb(216,216,216)); 
+    padding-bottom: 60px;
+}
+
+/* -----------Slide show start------- */
+
+#slideshow{
+    height:400px;
+    width:54%;
+    margin: auto;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+}
+#slideshow #slide1{
+    height:100%;
+    width:65%;  
+    position:relative;
+}
+
+#slideshow #slide2{
+    height:100%;
+    width:35%
+}
+.smallslide{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+.big{
+    height:100%;
+    width:100%;
+
+    cursor: pointer;
+    box-shadow:  0px 0px 1500px rgba(0,0,0,0.9) inset;
+}
+#slidetext{
+  position: absolute;
+  bottom: 0px;
+  height:50px;
+  background-color: black;
+  width:100%;
+  opacity: 0.7;
+}
+.textcon{
+    text-align: center;
+    margin-top: 13px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    opacity:1;
+}
+#discount{
+  position: absolute;
+  margin-top: 10px;
+  border-radius: 100px;
+  margin-left: 10px;
+  height:80px;
+  background-color: rgb(212, 207, 207);
+  width:11.5%;
+  opacity: 0.8;
+ display:flex ;
+ align-items: center;
+}
+.disc{
+    text-align: center;
+    font-size:16px;
+  
+}
+/* ------------divdown of slide--------- */
+
+#downslide{
+    width:54%;
+    margin: auto;
+    display:grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+
+}
+.downdiv{
+   padding:5px;
+}
+.divimage{
+    height:100%;
+    width:100%; 
+}
+#news{
+    background-color: #fff;
+    width:54%;
+    margin:auto;
+    margin-top: 50px;
+    height:300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#news1{
+    width:95%;
+    height:16%;
+    margin-top: 5px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:grey
+}
+#newsinside1{
+    width:65%;
+    display:flex;
+    padding-top: 1.5%;
+    color:#2af;
+    font-size: 17px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#newsinside1 :hover{
+    text-decoration: underline;
+}
+#news2{
+   width:95%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(5,1fr) ;
+   grid-template-rows: auto;
+   gap:10px
+}
+.imgdiv{
+    width:100%;
+    height:53%;
+}
+.newsdiv{
+   text-align: center;
+   color:grey;
+   height:80%;
+}
+.comment:hover{
+    text-decoration: underline;
+}
+.livepic{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+#moment{
+    background-color: #fff;
+    width:54%;
+    margin:auto;
+    margin-top: 50px;
+    height:auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#moment1{
+    width:95%;
+    height:18%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:grey
+}
+#momentinside1{
+    width:60%;
+    display:flex;
+    color:#2af;
+    font-size: 17px;
+    padding-top: 1.5%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#momentinside1 :hover{
+    text-decoration: underline;
+}
+#moment2{
+   width:95%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(5,1fr) ;
+   grid-template-rows: auto;
+   gap:10px
+}
+#res3{
+    width:95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    grid-template-rows: auto;
+    gap:10px
+ }
+ #super{
+    position: static;
+    width:95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    grid-template-rows: auto;
+    gap:10px;
+ }
+ .resdiv{
+     height:80%
+ }
+.momentdiv{
+    text-align: center;
+    color:grey;
+}
+.momimgdiv{
+    height:70%;
+}
+.mompic{
+    height:100%;
+    width:100%;
+    border-radius: 5px;
+}
+.momcomment:hover{
+ text-decoration: underline;
+}
+
+#intro{
+    width:54%;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 36px;
+    color:#666666;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+#brought{
+    width:30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#petfinder{
+    width: 275px;
+    height:50px
+}
+#deal{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:15px;
+    width:54%;
+    margin-top: 20%;
+    margin:auto;
+    box-sizing: border-box;
+}
+.dealdiv{
+    height:50%;
+    width:100%;
+    margin-bottom: 20px;
+    
+}
+.dealbox{
+    border:1px solid rgb(210, 210, 210);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 8px;
+    text-align: center;
+    color:grey;
+    
+}
+#thought{
+    width:54%;
+    margin:auto;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 510;
+    color:#888888
+}
+#join{
+    width:25%;
+    height:70px;
+    margin:auto;
+    margin-top: 60px;
+    padding: 0.8%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgb(249, 59, 59) ;
+    border-radius: 10px;
+    font-weight: 600;
+    color:white;
+    cursor: pointer;
+}
+#join:hover{
+    background-color:rgb(239, 35, 35) ;
+}
+#sponsered{
+    width:54%;
+    margin: auto;
+    margin-top: 50px;
+}
+/* --------big footer start----------- */
+
+
+
+@media only all and (min-width: 799px) and (max-width :1190px){
+
+    #slideshow{
+        width:85%;
+    }
+    #discount{
+        position: absolute;
+        margin-top: 10px;
+        border-radius: 100px;
+        margin-left: 10px;
+        height:82px;
+        background-color: rgb(212, 207, 207);
+        width:14%;
+        opacity: 0.8;
+      }
+      .disc{
+        text-align: center;
+        font-size:14px;
+      
+    }
+    #downslide{
+        width:85%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    }
+    #news{
+        width:85%;
+    }
+    #news1{
+        font-size: 19px;
+    }
+    #newsinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #moment{
+        width:85%;
+    }
+    #moment1{
+        font-size: 19px;
+    }
+    #momentinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #intro{
+        width:85%; 
+        font-size: 28px;  
+    }
+    #brought{
+        width:45%;
+    }
+    #deal{
+        width:85%;
+    }
+    
+    #thought{
+        width:85%;
+        font-size: 18px;
+
+    }
+    #join{
+        width:50%;
+        height:60px;
+        padding: 0.7%;
+        padding-top: 10px;
+        font-size: 18px;
+
+    }
+    #sponsered{
+        width:85%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+   
+}
+
+
+@media only all and (min-width: 570px) and (max-width :800px){
+      #slideshow{
+        width:90%;
+    }
+    #downslide{
+        width:90%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    }
+    #discount{
+        position: absolute;
+        margin-top: 10px;
+        border-radius: 100px;
+        margin-left: 10px;
+        height:77px;
+        background-color: rgb(212, 207, 207);
+        width:16%;
+        opacity: 0.8;
+      }
+      .disc{
+        text-align: center;
+        font-size:12px;
+      
+    }
+    #news{
+        width:90%;
+    }
+    #news1{
+        font-size: 15px;
+    }
+    #newsinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #moment{
+        width:90%;
+    }
+    #moment1{
+        font-size: 15px;
+    }
+    #momentinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #intro{
+        width:90%;
+        font-size: 24px;
+       
+    }
+    #brought{
+        width:60%;
+    }
+    #deal{
+        width:90%;
+    }
+    .dealbox{
+        font-size: 7px;
+        box-sizing:content-box;
+        padding: 1px;
+     }
+     #thought{
+        width:90%;
+        font-size: 16px;
+
+    }
+    #join{
+        width:65%;
+        height:60px;
+        padding: 0.7%;
+        padding-top: 10px;
+        font-size: 18px;
+
+    }
+    #sponsered{
+        width:90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+  
+    
+}
+
+@media only all and (min-width:439px) and (max-width :569px){
+    
+    #slideshow{
+        width:95%;
+    }
+    
+    #discount{
+        position: absolute;
+        margin-top: 10px;
+        border-radius: 100px;
+        margin-left: 10px;
+        height:50px;
+        background-color: rgb(212, 207, 207);
+        width:16%;
+        opacity: 0.8;
+      }
+      .disc{
+        text-align: center;
+        font-size:10px;
+      
+    }
+    #downslide{
+        width:95%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    }
+    #news{
+        width:95%;
+    }
+    #news1{
+        font-size: 13px;
+    }
+    #newsinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #moment{
+        width:95%;
+    }
+    #moment1{
+        font-size: 13px;
+    }
+    #momentinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #intro{
+        width:95%;
+        font-size: 20px;
+       
+    }
+    #brought{
+        width:95%;
+    }
+    #deal{
+       
+        width:95%;
+
+    }
+    .dealbox{
+        font-size: 8px;
+        box-sizing:content-box;
+        padding: 1px;
+         
+     }
+     #thought{
+        width:95%;
+        font-size: 14px;
+
+    }
+    #join{
+        width:75%;
+        height:60px;
+        padding: 0.7%;
+        padding-top: 10px;
+        font-size: 18px;
+
+    }
+    #sponsered{
+        width:95%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    
+}
+
+@media only all and (min-width:80px) and (max-width :440px){
+    
+    #slideshow{
+        height:300px;
+        width:100%;
+    }
+    
+    #discount{
+        position: absolute;
+        margin-top: 10px;
+        border-radius: 100px;
+        margin-left: 10px;
+        height:40px;
+        background-color: rgb(212, 207, 207);
+        width:16%;
+        opacity: 0.8;
+      }
+      .disc{
+        text-align: center;
+        font-size:8px;
+      
+    }
+    #downslide{
+        width:100%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    }
+    #news{
+        width:100%;
+    }
+    #news1{
+        font-size: 13px;
+    }
+    #newsinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #moment{
+        width:100%;
+    }
+    #moment1{
+        font-size: 13px;
+    }
+    #momentinside1{
+        width:60%;
+        display:flex;
+        color:#2af;
+        font-size: 13px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    #intro{
+        width:100%;
+        font-size: 18px;
+       
+    }
+    #brought{
+        width:100%;
+    }
+    #deal{
+        width:100%;
+
+    }
+    .dealbox{
+       font-size: 7px;
+        
+    }
+    #thought{
+        width:100%;
+        font-size: 12px;
+
+    }
+    #join{
+        width:85%;
+        height:60px;
+        padding: 0.7%;
+        padding-top: 10px;
+        font-size: 15px;
+
+    }
+    #sponsered{
+        width:100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+  
+    
+}

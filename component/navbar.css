@@ -1,0 +1,528 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+}
+#insidenav{
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    width:70%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+#left{
+    display: flex;
+    align-items: center;
+}
+#center{
+    display: flex;
+    justify-content: space-around;
+    width:160px;
+}
+#fb,#twitter{
+    height: 40px;
+
+}
+.tooltip1{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .tooltip1 .tooltiptext {
+    visibility: hidden;
+    width:360px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: -370%;
+    margin-left: -10px;
+    opacity:0.7;
+    transition: opacity 1.0s;
+  }
+  
+  .tooltip1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip1:hover .tooltiptext {
+    visibility: visible;
+    opacity:0.8;
+  }
+  .tooltip2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width:250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: -238%;
+    margin-left: -10px;
+    opacity:0.7;
+    transition: opacity 1.0s;
+  }
+  
+  .tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+    opacity:0.8;
+  }
+#log ,#sign {
+   text-decoration: none;
+   color:rgb(35, 31, 31);
+   font-size:12px;
+   padding-left:10px;
+   padding-right: 5px;
+}
+#sign{
+    background-color: transparent;
+    border: 0;
+}
+#log{
+    margin-top: 20px;
+}
+#facebook a{
+    text-decoration: none;
+    padding:5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+    background-color: #36a;
+    color:#ffffff;
+    font-weight:550;
+    cursor: pointer;
+}
+#facebook a:hover{
+    background-color: rgb(30, 60, 100);
+}
+#email1{
+    text-decoration: none;
+    padding:1px 15px 1px 15px;
+    border:0;
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+    background-color: #666;
+    color:#ffffff;
+    font-weight:550;
+    cursor: pointer;
+}
+#email1:hover{
+    background-color: rgb(66, 66, 66);
+}
+#pipe{
+      font-size: 30px;
+      font-weight:0px;
+      color:#666;
+}
+/* ------second navbar-------- */
+#navbar2{
+    display:flex;
+    height: 40px;
+    background-color: #3b7;
+}
+#navbar2 #insidenav2{
+    width:60%;
+    height: 100%;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    color:#f0f0f0 ;
+    font-size: 18px;
+    font-weight: 600;
+}
+#selected a{
+    height:100%;
+    padding:10px 27px 9px 27px;
+    background-color: #296;
+    text-decoration: none;
+    color:white ;
+    
+}
+#insidenav2 > div >a{
+    text-decoration: none;
+    color:white;
+}
+#insidenav2 > div >a:hover{
+    color:#ebebeb
+}
+/* ---------modal--------- */
+.modal-content{
+    border-radius: 15px;
+    width: 110%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0
+}
+
+#nav_signUp{
+    position: relative;
+    top:50px;
+    left:50px;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    color: rgb(114, 112, 112);
+    border: none;
+}
+
+#logo_dismiss{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    font-size: small;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+}
+
+.modal-body>div{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    font-size: small;
+    color: rgb(96, 95, 95);
+    cursor: pointer;
+}
+
+.modal-body>div:hover{
+    background-color: rgb(227, 226, 226);
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+
+.modal-footer button{
+    text-decoration: none;
+    color: rgb(114, 112, 112);
+}
+
+.modal-footer button:hover{
+    text-decoration: underline;
+    color: rgb(114, 112, 112);
+}
+/* ---------modal loging------------ */
+.modal-content{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    color: rgb(114, 112, 112);
+    border: none;
+}
+
+#logo_dismiss{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    font-size: small;
+}
+
+.modal-body1{
+    text-align: center;
+}
+
+.modal-body1 input{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    margin:0px auto 10px auto;
+    width: 300px;
+}
+
+.btn-success{
+    width: 150px;
+    margin-top: 10px;
+}
+
+#loginFbButton {
+	background-color: #3b5998;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	padding: 10px;
+}
+
+#loginFbButton{
+    margin: auto;
+}
+
+#modalFooterLinks{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* #modalFooterLinks button:nth-child(1)
+{
+    margin-left: -100px;
+} */
+
+#modalFooterLinks button{
+    text-decoration: none;
+    color: rgb(114, 112, 112);
+}
+
+#modalFooterLinks button:hover{
+    text-decoration: underline;
+    color: rgb(114, 112, 112);
+}
+@media only all and (min-width: 799px) and (max-width :1190px){
+    #insidenav{
+        width:96%;
+    }
+    #navbar2 #insidenav2{
+        width:90%;
+        font-size: 16px;
+    }
+    #selected a{
+        height:100%;
+        padding:11px 25px 11px 25px;
+        background-color: #296;
+    }
+    #center{
+        display: flex;
+        justify-content: space-around;
+        width:120px;
+    }
+}
+
+@media only all and (min-width: 570px) and (max-width :800px){
+    #link,#fb,#twitter{
+        height:20px;
+    }
+    #insidenav{
+        width:95%;
+    }
+    #logo{
+        width:220px;
+    }
+    #navbar2 #insidenav2{
+        width:90%;
+        font-size: 15px;
+    }
+    #selected a{
+        height:100%;
+        padding:11px 25px 12px 25px;
+        background-color: #296;
+    }
+    #center{
+        display: flex;
+        justify-content: space-around;
+        width:80px;
+    }
+    .tooltip2 .tooltiptext2 {
+        visibility: hidden;
+        width:250px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: -518%;
+        margin-left: -10px;
+        opacity:0.7;
+        transition: opacity 1.0s;
+      }
+
+      .tooltip1 .tooltiptext {
+        visibility: hidden;
+        width:360px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: -795%;
+        margin-left: -10px;
+        opacity:0.8;
+        transition: opacity 1.0s;
+      }
+}
+
+@media only all and (min-width:439px) and (max-width :569px){
+    #link,#fb,#twitter{
+        height:15px;
+    }
+    #logo{
+        width:150px;
+    }
+    #insidenav{
+        width:100%;
+    }
+    #navbar2 #insidenav2{
+        width:100%;
+        font-size: 14px;
+    }
+    #selected a{
+        padding:12px 20px 10px 20px;
+        background-color: #296;
+
+    }
+    #center{
+        display: flex;
+        justify-content: space-around;
+        width:70px;
+    }
+    .tooltip2 .tooltiptext2 {
+        visibility: hidden;
+        width:180px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 170%;
+        left: -482%;
+        margin-left: -10px;
+        opacity:0.7;
+        font-size: 10px;
+        transition: opacity 1.0s;
+      }
+
+      .tooltip1 .tooltiptext {
+        visibility: hidden;
+        width:240px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 170%;
+        left: -680%;
+        margin-left: -10px;
+        opacity:0.7;
+        font-size: 10px;
+        transition: opacity 1.0s;
+      }
+      #facebook a{
+        padding:2px 7px 2px 7px;
+        border-radius: 3px;
+        margin: 0px 2px 0px 2px;
+        background-color: #36a;
+        color:#ffffff;
+        font-size: 11px;
+        font-weight:550;
+        cursor: pointer;
+    }
+    #email a{
+        padding:2px 10px 2px 10px;
+        border-radius: 3px;
+        margin: 0px 5px 0px 5px;
+        background-color: #666;
+        color:#ffffff;
+        font-weight:550;
+        font-size: 11px;
+        cursor: pointer;
+    }
+}
+
+@media only all and (min-width:80px) and (max-width :440px){
+    #logo{
+        width:90px;
+    }
+    #link,#fb,#twitter{
+        height:10px;
+    }
+    #navbar{
+        width:100%;
+    }
+    #log ,#sign a{
+       color:rgb(35, 31, 31);
+       font-size:10px;
+       padding-left:5px;
+       padding-right: 2px;
+    }
+    #insidenav{
+        width:100%;
+    }
+    #navbar2 {
+        width:100%
+    }
+    #navbar2 #insidenav2{
+        width:100%;
+        font-size: 11px;
+    }
+    #selected a{
+        height:100%;
+        padding:13px 18px 13px 18px;
+        background-color: #296;
+    }
+    #center{
+        display: flex;
+        width:50px;
+    }
+}
