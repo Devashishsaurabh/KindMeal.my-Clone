@@ -46,8 +46,6 @@ function bigfooter(){
       <h3 style="color:#ffffff;font-size:14px;font-weight:bold;padding-bottom:10px">Mobile</h3>
       <p><a href="https://www.kindmeal.my/mobile.htm">iPhone & iPad App</a></p>
       <p><a href="">Android App</a></p>
-      <br>
-      <br>
       <h3 style="color:#ffffff;font-size:14px;font-weight:bold;padding-bottom:10px">Exciting Promos</h3>
       <p><a href="">Gadhimai: Ending Mass Slaughter</a></p>
       <p><a href="">Free Meals</a></p>
