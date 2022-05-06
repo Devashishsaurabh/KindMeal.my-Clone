@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.kindmeal.my/favicon.png" type="image/x-icon">
+    <title>Recipe</title>
+    <style>
+        #content-box{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 230px;
+            background-color: #f0f0f0;
+        }
+
+       #title{
+           display: flex;
+            gap: 30px;
+            /* border: 1px solid; */
+            width: 75%;
+            margin: auto;
+       }
+
+       #words{
+        width: 75%;
+        /* border: 1px solid red; */
+        margin: auto;
+       }
+        
+       #box{
+           /* border: 1px solid gold; */
+           width: 75%;
+           margin: auto;
+           display: flex;
+           margin-top: 30px;
+           gap: 30px;
+       }
+
+       #search{
+           height: 30px;
+           width: 280px;
+           border-radius: 5px;
+           
+       }
+
+       #categories{
+           border-radius: 5px;
+           width: 160px;
+           font-weight: bold;
+           
+       }
+
+       #main{
+           width: 100%;
+           height: auto;
+           /* border: 1px solid black; */
+           display: block;
+       }
+
+       #buttons{
+           width: 80%;
+           /* border: 1px solid; */
+           height: 140px;
+           margin-left: 90px;
+           padding-top: 40px;
+       }
+       #buttons button {
+           border: 1px solid rgb(205, 201, 201);
+       }
+
+
+       button{
+           width: 180px;
+           height: 40px;
+           border-radius: 5px;
+           border: 0;
+       }
+
+       button:hover{
+           cursor: pointer;
+       }
+
+       #btn1{
+           display: flex;
+           gap: 30px;
+           padding-left: 100px;
+       }
+       #btn2{
+           display: flex;
+           gap: 30px;
+           padding-left: 100px;
+           margin-top: 40px;
+       }
+
+       #items{
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: auto;
+           /* border: 1px solid greenyellow; */
+           height: auto;
+           width: 75%;
+           margin: auto;
+           gap: 20px;
+           /* display: block; */
+       }
+
+       .col{
+           border-radius: 10px;
+           /* border: 1px solid black; */
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+           height: 310px;
+           width: 100%;
+           /* display: block; */
+       }
+
+       #up1{
+           /* border: 1px solid; */
+           height:54px;
+           display: flex;
+       }
+
+       .smallimages{
+           /* border: 1px solid red; */
+           width: 50px;
+           height: 50px;
+           
+           /* display: inline-block; */
+       }
+
+       .smallimages img{
+        height: 53px;
+        border-radius: 25px;
+       }
+
+       .bigimages{
+           /* border: 1px solid green; */
+           height: 190px;
+           width: 100%;
+
+       }
+       .bigimages img{
+           height: 190px;
+           width: 100%;
+       }
+
+       .icon img{
+           height: 25px;
+           margin-left: 10px;
+           margin-top: 15px;
+       }
+
+       #adds{
+           height: 300px;
+           /* border: 1px solid ; */
+           margin-top: 20px;
+           width: 75%;
+           margin: auto;
+       }
+
+       
+    </style>
+</head>
+<body>
+    <div id="content-box">
+
+        <div id="title">
+            <h2 style="color: rgb(95, 75, 75);">Food & Drinks</h2>
+            <h2 style="color: gray;">|</h2>
+            <h2 style="color: gray;">Yummy Meat-Free Recipes</h2>
+        </div>
+
+        <div id="words">
+            <p>Want to craft your own creative meat-free meals? Get inspiration from other food lovers, or share your own masterpieces!</p>
+            <p>Transform into a master chef now.</p>
+        </div>
+
+        <div id="box">
+            <input type="text" placeholder="Search Recipe or User Name" id="search">
+            <select id="categories">
+                <option >All Categories</option>
+                <option value="appetizer" >Appetizer</option>
+                <option value="beverages">Beverages</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="condiments">Condiments</option>
+                <option value="dessert">Dessert</option>
+                <option value="salads">Salads</option>
+            </select>
+            <button style="color: white; background-color: #f53838; border-radius: 5px; width: 160px;font-weight: bold; font-size: 15px;">Search Recipes</button>
+            <button style="color: white; background-color: #04be5a; border-radius: 5px; width: 160px ;font-weight: bold; font-size: 15px;margin-left: 280px;">Share My Recipe</button>
+        </div>
+
+    </div>
+
+    <div id="main">
+        <div id="buttons">
+           <div id="btn1">
+            <button style="background-color: #04be5a; color: white;">All Categories</button>
+            <button>Appetizer</button>
+            <button>Beverages</button>
+            <button>Breakfast</button>
+            <button>Breads</button>
+            <button>Condiments</button>
+           </div>
+           <div id="btn2">
+               <button>Dessert</button>
+               <button>Snacks</button>
+               <button>Main Dishes</button>
+               <button>Salads</button>
+               <button>Side Dishes</button>
+               <button>Soups</button>
+           </div>
+        </div>
+
+        <div id="items">
+
+            <div class="col" id="may">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/14/14169-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">MayNg</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1000/1000009-19416-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td>
+                            <td style="padding-top: 12px;">1hr</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">4</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3</td>
+                        </tr>
+                    </table>
+                </div>                
+            </div>
+            <div class="col" id="sham">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/38/38334-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">shamanth</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039453-58877-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">30min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">5</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div  class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/13/13040-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">YukiAu Yung</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039457-58885-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">40min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+                            </td><td style="padding-top: 12px;">4</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/14/14169-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">MayNg</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1000/1000011-19418-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3omin</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">4</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/40/40202-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">ismah</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039466-58897-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">20min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">4</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">1</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/40/40177-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">Evnadham</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039465-58896-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">22min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">14</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">2</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            
+            <div class="col" id="may">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/images/default_male-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">Binay</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039460-58888-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">40min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">11</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">5</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>                
+            </div>
+            <div class="col" id="sham">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/0/6-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">kiChef</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/118/118127-18391-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">15min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">31</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">11</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div  class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/11/11401-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">BluePe</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1000/1000013-19421-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">50min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">11</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">4</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/20/20322-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">Janelle</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1000/1000012-19420-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">25min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">10</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/29/29512-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">loveearth</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039449-58866-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">2hr</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">6</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">32min</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col" id="may">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/14/14169-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">MayNg</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1000/1000009-19416-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">1hr</td>
+                            
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">20</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">3</td>
+                        </tr>
+                    </table>
+                </div>                
+            </div>
+            <div class="col" id="sham">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/38/38334-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">shamanth</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039453-58877-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">65min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">4</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">2</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div  class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/13/13040-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">YukiAu Yung</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039457-58885-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">1hr</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">22</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">12</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div class="col">
+                <div id="up1">
+                    <table>
+                        <tr>
+                            <td><div class="smallimages"><img src="https://www.kindmeal.my/photos/member/35/35085-s.jpg"></div></td>
+                            <td>
+                                <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">SynThia</div>
+                            </td>
+                            <td>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bigimages">
+                    <img src="https://www.kindmeal.my/photos/recipe/1039/1039459-58887-m.jpg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="icon"><img src="https://www.kindmeal.my/images/icon_time_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">33min</td>
+                            <td>
+                                <div class="icon" style="margin-left: 140px;"><img src="https://www.kindmeal.my/images/icon_heart_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">19</td>
+                            <td>
+                                <div class="icon" style="margin-left: 40px;"><img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt=""></div>
+                            </td><td style="padding-top: 12px;">10</td>
+                        </tr>
+                    </table>
+                </div>   
+
+        </div>
+        
+
+
+
+
+
+    </div>
+   
+</body>
+</html>
