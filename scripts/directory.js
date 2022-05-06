@@ -24,6 +24,7 @@ if (usrName !== null) {
 	box.append(capImg, desc);
 	document.getElementById("left").append(box);
 }
+//**********************************************************************************
 
 let directoryPhotos1 = [
 	"https://www.kindmeal.my/photos/item/0/362-3912-m.jpg",
