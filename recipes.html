@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.kindmeal.my/favicon.png" type="image/x-icon">
     <title>Recipe</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous" ></script>
+<!-- <link rel="stylesheet" href="./styles/index.css"> -->
+<link rel="stylesheet" href="./component/navbar.css">
+<link rel="stylesheet" href="./component/footer.css">
     <style>
         #content-box{
             /* border: 1px solid red; */
             width: 100%;
             height: 230px;
             background-color: #f0f0f0;
+            padding-top: 25px;
         }
 
        #title{
@@ -38,9 +55,11 @@
        }
 
        #search{
-           height: 30px;
+           height: 40px;
            width: 280px;
            border-radius: 5px;
+           border:1px solid grey;
+           outline: none;
            
        }
 
@@ -52,10 +71,11 @@
        }
 
        #main{
-           width: 100%;
+           width: 95%;
            height: auto;
            /* border: 1px solid black; */
            display: block;
+           margin:auto;
        }
 
        #buttons{
@@ -64,20 +84,21 @@
            height: 140px;
            margin-left: 90px;
            padding-top: 40px;
+           padding-left: 46px;
        }
-       #buttons button {
+       #buttons #btnlist {
            border: 1px solid rgb(205, 201, 201);
        }
 
 
-       button{
+       #btnlist{
            width: 180px;
            height: 40px;
            border-radius: 5px;
            border: 0;
        }
 
-       button:hover{
+       #btnlist:hover{
            cursor: pointer;
        }
 
@@ -102,6 +123,7 @@
            width: 75%;
            margin: auto;
            gap: 20px;
+           margin-top:4%;
            /* display: block; */
        }
 
@@ -109,7 +131,7 @@
            border-radius: 10px;
            /* border: 1px solid black; */
            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-           height: 310px;
+           height: 380px;
            width: 100%;
            /* display: block; */
        }
@@ -135,12 +157,12 @@
 
        .bigimages{
            /* border: 1px solid green; */
-           height: 190px;
+           height: 270px;
            width: 100%;
 
        }
        .bigimages img{
-           height: 190px;
+           height: 100%;
            width: 100%;
        }
 
@@ -157,11 +179,17 @@
            width: 75%;
            margin: auto;
        }
-
-       
+      
     </style>
 </head>
 <body>
+    <header id="navbar"></header>
+  <!-- ---------Second Navbar---------- -->
+  <header id="navbar2"></header>
+  <!-- ------second navbar end--------- -->
+
+
+  <div id="body">
     <div id="content-box">
 
         <div id="title">
@@ -177,7 +205,7 @@
 
         <div id="box">
             <input type="text" placeholder="Search Recipe or User Name" id="search">
-            <select id="categories">
+            <select id="categories" style="color:grey; font-weight:500">
                 <option >All Categories</option>
                 <option value="appetizer" >Appetizer</option>
                 <option value="beverages">Beverages</option>
@@ -186,8 +214,8 @@
                 <option value="dessert">Dessert</option>
                 <option value="salads">Salads</option>
             </select>
-            <button style="color: white; background-color: #f53838; border-radius: 5px; width: 160px;font-weight: bold; font-size: 15px;">Search Recipes</button>
-            <button style="color: white; background-color: #04be5a; border-radius: 5px; width: 160px ;font-weight: bold; font-size: 15px;margin-left: 280px;">Share My Recipe</button>
+            <button id="btnlist"style="color: white; background-color: #f53838; border-radius: 5px; width: 160px;font-weight: bold; font-size: 15px;">Search Recipes</button>
+            <button id="btnlist" style="color: white; background-color: #04be5a; border-radius: 5px; width: 160px ;font-weight: bold; font-size: 15px;margin-left: 280px;border:0px">Share My Recipe</button>
         </div>
 
     </div>
@@ -195,20 +223,20 @@
     <div id="main">
         <div id="buttons">
            <div id="btn1">
-            <button style="background-color: #04be5a; color: white;">All Categories</button>
-            <button>Appetizer</button>
-            <button>Beverages</button>
-            <button>Breakfast</button>
-            <button>Breads</button>
-            <button>Condiments</button>
+            <button id="btnlist" style="background-color: #04be5a; color: white;">All Categories</button>
+            <button id="btnlist">Appetizer</button>
+            <button id="btnlist">Beverages</button>
+            <button id="btnlist">Breakfast</button>
+            <button id="btnlist">Breads</button>
+            <button id="btnlist">Condiments</button>
            </div>
            <div id="btn2">
-               <button>Dessert</button>
-               <button>Snacks</button>
-               <button>Main Dishes</button>
-               <button>Salads</button>
-               <button>Side Dishes</button>
-               <button>Soups</button>
+               <button id="btnlist">Dessert</button>
+               <button id="btnlist">Snacks</button>
+               <button id="btnlist">Main Dishes</button>
+               <button id="btnlist">Salads</button>
+               <button id="btnlist">Side Dishes</button>
+               <button id="btnlist">Soups</button>
            </div>
         </div>
 
@@ -223,7 +251,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">MayNg</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838;color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px; border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -257,7 +285,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">shamanth</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -290,7 +318,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">YukiAu Yung</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -323,7 +351,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">MayNg</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -356,7 +384,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">ismah</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -389,7 +417,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">Evnadham</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -423,7 +451,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">Binay</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -456,7 +484,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">kiChef</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -489,7 +517,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">BluePe</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -522,7 +550,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">Janelle</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -555,7 +583,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">loveearth</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -588,7 +616,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">MayNg</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -622,7 +650,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">shamanth</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -655,7 +683,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">YukiAu Yung</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -688,7 +716,7 @@
                                 <div style="margin-left: 30px; font-family: Roboto, Arial, Helvetica, sans-serif;;">SynThia</div>
                             </td>
                             <td>
-                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;">View</button>
+                                <button style="margin-left: 120px; background-color: #f53838; color: white; font-family: Roboto, Arial, Helvetica, sans-serif; width: 80px; border-radius: 10px;border:0px;">View</button>
                             </td>
                         </tr>
                     </table>
@@ -713,13 +741,38 @@
                 </div>   
 
         </div>
-        
-
-
-
-
-
     </div>
-   
+</div>
+    <div id="footer"></div>
+    <div id="bigfooter"></div>
 </body>
 </html>
+<script type="module">
+    import { navbar, navbar2 } from "../component/navbar.js";
+document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("navbar2").innerHTML = navbar2();
+
+import { footer, bigfooter } from "../component/footer.js";
+document.getElementById("footer").innerHTML = footer();
+document.getElementById("bigfooter").innerHTML = bigfooter();
+
+
+
+let usrName = JSON.parse(localStorage.getItem("username"));
+if (usrName !== null) {
+	document.getElementById("left").innerHTML = null;
+	let box = document.createElement("div");
+    box.style="display:flex;justify-content:space-between;align-items:center;color:gray"
+
+	let capImg = document.createElement("img");
+	capImg.src = "https://www.kindmeal.my/images/icon_notice.png";
+	capImg.style = "height:30px";
+
+	let desc = document.createElement("p");
+	desc.innerText = "Hi, " + usrName + "!";
+    desc.style="padding-top: 15px;font-size:18px"
+
+	box.append(capImg, desc);
+	document.getElementById("left").append(box);
+}
+</script>

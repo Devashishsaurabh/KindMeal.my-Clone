@@ -163,8 +163,8 @@ function navbar2(){
     <div id="selected"><a href="index.html">Home</a></div>
     <div><a href="">Meal Deals </a></div>
     <div><a href="">KindMoments</a></div>
-    <div><a href="">Hot Picks</a></div>
-    <div><a href="">Recipes</a></div>
+    <div><a href="hotpicks.html">Hot Picks</a></div>
+    <div><a href="recipes.html">Recipes</a></div>
     <div><a href="directory.html">Directory</a></div>
     <div><a href="">Articles</a></div>
     <div><a href="">Help</a></div>
