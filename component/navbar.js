@@ -65,8 +65,8 @@ function navbar(){
 
 					<div class="modal-body1">
 						<div id="yourEmailPassword">
-							<input type="email" placeholder="Your Email" id="email" />
-							<input type="password" placeholder="Your Password" id="pass" />
+							<input type="email" placeholder="Your Email" id="email" required />
+							<input type="password" placeholder="Your Password" id="pass" required />
 							<button
 								type="button"
 								class="btn btn-success"
@@ -165,7 +165,7 @@ function navbar2(){
     <div><a href="">KindMoments</a></div>
     <div><a href="">Hot Picks</a></div>
     <div><a href="">Recipes</a></div>
-    <div><a href="">Directory</a></div>
+    <div><a href="directory.html">Directory</a></div>
     <div><a href="">Articles</a></div>
     <div><a href="">Help</a></div>
   </div>`
