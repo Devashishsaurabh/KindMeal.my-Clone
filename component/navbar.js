@@ -1,4 +1,4 @@
-function navbar(){
+function navbar() {
     return `<div id="insidenav">
     <div id="right">
         <a href="index.html"><img  id="logo"src="https://www.kindmeal.my/images/logo-kindmeal.png"></a>
@@ -158,11 +158,11 @@ function navbar(){
         </div>
     </div>`
 }
-function navbar2(){
+function navbar2() {
     return `<div id="insidenav2">
     <div id="selected"><a href="index.html">Home</a></div>
-    <div><a href="">Meal Deals </a></div>
-    <div><a href="">KindMoments</a></div>
+    <div><a href="meal.html">Meal Deals </a></div>
+    <div><a href="kindmoment.html">KindMoments</a></div>
     <div><a href="hotpicks.html">Hot Picks</a></div>
     <div><a href="recipes.html">Recipes</a></div>
     <div><a href="directory.html">Directory</a></div>
@@ -170,6 +170,6 @@ function navbar2(){
     <div><a href="">Help</a></div>
   </div>`
 }
-export {navbar,navbar2}
+export { navbar, navbar2 }
 
 // --------navbar export from heare----------
