@@ -9,9 +9,9 @@ function bigfooter(){
     return `<div id="insidebigfooter">
     <div>
       <h3 style="color:#ffffff;font-size:14px;font-weight:bold;padding-bottom:10px">General</h3>
-      <p><a href="" >Home</a></p>
-      <p><a href="">Sign Up</a></p>
-      <p><a href=""">Business / Restaurateurs</a></p>
+      <p><a href="index.html" >Home</a></p>
+      <p><a href="signup.html">Sign Up</a></p>
+      <p><a href="https://www.kindmeal.my/businesses.htm">Business / Restaurateurs</a></p>
       <p><a href="">Advertising</a></p>
       <p><a href="">About KindMeal.my</a></p>
       <p><a href="">Help & FAQ</a></p>
@@ -19,7 +19,7 @@ function bigfooter(){
       <p><a href="">Inspiring Partners</a></p>
       <p><a href="">Lifestyle Ambassadors</a></p>
       <p><a href="">Job & Carrers</a></p>
-      <p><a href="">Contact Us</a></p>
+      <p><a href="https://www.kindmeal.my/contact.htm">Contact Us</a></p>
     </div>
     <div>
       <h3 style="color:#ffffff;font-size:14px;font-weight:bold;padding-bottom:10px">Features</h3>

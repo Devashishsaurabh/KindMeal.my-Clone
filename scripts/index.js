@@ -52,7 +52,8 @@ setInterval(() => {
 
 document.getElementById("slide2").addEventListener("click", redirect);
 function redirect() {
-	window.location.href = "meals.html";
+	window.location.href ="hotpicks.html" ;
+	console.log("hi")
 }
 
 let big = [
@@ -105,7 +106,7 @@ setInterval(() => {
 
 document.getElementById("slide1").addEventListener("click", redirect1);
 function redirect1() {
-	window.location.href = "meals.html";
+	window.location.href = "hotpicks.html";
 }
 
 big.map(function (ele) {
