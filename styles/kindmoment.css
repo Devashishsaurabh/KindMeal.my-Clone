@@ -16,7 +16,6 @@
     height: 200px;
     /* border: 1px solid; */
     margin: auto;
-    margin-top: 35px;
     display: flex;
     justify-content: space-between;
 }
@@ -29,7 +28,7 @@
 }
 
 #right_div {
-    height: 70%;
+    height: 80%;
     width: 27%;
     /* border: 1px solid; */
     margin-top: 58px;
@@ -60,10 +59,9 @@
     color: #444444;
 }
 
-#right_div button {
-    padding: 7px 60px;
-    /* margin: auto */
-    margin-left: 50px;
+#right_div #share {
+    padding: 3px 50px;
+    margin-left: 105px;
     font-size: 18px;
     font-weight: bold;
     background-color: red;
@@ -171,7 +169,8 @@ p2 {
 .right_div input {
     font-size: 15px;
     padding: 7px 24px 7px 10px;
-    margin: 7px
+    margin: 7px;
+    height:36px;
         /* border-radius: 5px; */
 }
 
@@ -183,9 +182,9 @@ p2 {
 }
 
 
-#search {
+#search1 {
     /* line-height: 35px; */
-    height: 16px;
+    height: auto;
     width: auto;
     padding: 9px 15px;
     border: 1px solid;

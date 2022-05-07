@@ -16,12 +16,12 @@
     height: 200px;
     /* border: 1px solid; */
     margin: auto;
-    margin-top: 35px;
 }
 
 #meal_para {
     width: 100%;
     height: 145px;
+    padding-top: 15px;
     /* border: 1px solid; */
 }
 
@@ -203,8 +203,8 @@ p2 {
 }
 
 #dish_image img {
-    height: 49%;
-    width: 36.9%;
+    height: 32%;
+    width: 37.5%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     /* position: fixed; */
@@ -230,14 +230,13 @@ p2 {
 
 
 #dish_detail {
-    height: 42%;
+    height: 45%;
     width: 100%;
-    /* border: 1px solid; */
 }
 
 #dish_detail #all_detail {
     width: 93%;
-    height: 70%;
+    height: 63%;
     /* border: 1px solid; */
     margin: auto;
     margin-top: 12px;
@@ -288,7 +287,7 @@ p2 {
 
 #dish_detail #fix_all {
     width: 100%;
-    height: 24%;
+    height: 26%;
     display: flex;
     border-top: 1px solid gainsboro;
     box-shadow: 0px 0px 6px #e0e0e0;
@@ -298,8 +297,7 @@ p2 {
 
 .icon {
     width: 26%;
-    height: 96%;
-    /* border: 1px solid; */
+    height: 100%;
 }
 
 .icon img {
