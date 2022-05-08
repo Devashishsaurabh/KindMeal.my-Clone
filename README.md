@@ -2,7 +2,9 @@
 Collaboration Project KindMeal.my
 
 Hello everyone, this is a Readme for our construct week project that has been completed successfully within the duration of 5 days. It had 5 team members including me. Below we have described the responsibilities shared by each of us with our respective details and social handles.
+
 My teammates are:
+
 1. Dev Ashish Saurabh 
 2. Rajashree Chakraborty
 3. Aman Jha 
