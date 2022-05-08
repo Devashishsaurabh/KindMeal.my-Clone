@@ -1,0 +1,67 @@
+#container{
+    width: 60%;
+    height: auto; 
+    margin: auto;
+    display: flex;
+   /* border: 1px solid rgb(162, 227, 21); */
+  
+ 
+ }
+ #container1{
+    width: 120%;
+    height: auto;
+    /* border: 1px solid black;   */
+ }
+ #container1>div{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+ }
+ 
+ img{
+    width: 70%;
+    margin: auto;
+    /* background-color: black; */
+    /* padding: 20px 0px 0px 0px; */
+    margin-top: 20px;
+    /* margin-left:20px ; */
+    /* margin-right:20px ; */
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    /* text-align: center;
+    justify-content: center; */
+ }
+ #container1>div>div{
+ 
+   /* background-color: aqua; */
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+ }
+ #genreal{
+   width: 90%;
+   height: auto;
+   /* border: 1px solid orangered; */
+   padding: 10px 10px 10px 10px;
+   border-radius: 10px;
+   margin-left: 20px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ }
+ #genreal>div{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   
+    
+ 
+ }
+ p{
+    font-size: 13px;
+ }
+ h3{
+    font-size: 13px;
+ }
+ #help a{
+    font-size: 13px;
+    color: rgb(181, 42, 42);
+ }
