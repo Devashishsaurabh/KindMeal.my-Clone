@@ -3,11 +3,11 @@ Collaboration Project KindMeal.my
 
 Hello everyone, this is a blog for our construct week project that has been completed successfully within the duration of 5 days. It had 5 team members including me. Below we have described the responsibilities shared by each of us with our respective details and social handles.
 My teammates are:
-1. Dev Ashish Saurabh -Leader
-2. Rajashree Chakraborty- Co-Leader
-3. Aman Jha -Member
-4. Gaurav Singh-Member
-5. Nirmal Patel-Member
+1. Dev Ashish Saurabh 
+2. Rajashree Chakraborty
+3. Aman Jha 
+4. Gaurav Singh
+5. Nirmal Patel
 
 The Journey:
 
@@ -18,15 +18,17 @@ Project Details:
 We are given a task to make a functional clone website of The World's 1st Meat-Free Lifestyle Platform KindMeal.my. KindMeal.my is a Malaysia startup Founded by Andy K oh in 2008, PetFinder.my has been working hard with nationwide animal shelters, rescuers, and pet lovers to improve Malaysia's animal welfare. Much of our focus was centered upon pets - specifically, dogs and cats (alright, we have rabbits, hamsters, birds, fishes, turtles-, and chickens too). The website has lots of functionalities such as login, signup, Landing-page, Meal Deals, KindMoments, Hot Picks, Recipes, Directory, Articles, Help, etc.
 We tried our best to clone the website from scratch based on the knowledge gained from unit-3 of Journey (unit 1–3) at Masai School.  We have imparted the majority of functions that the KindMeal. 
 
+<img src="https://cdn-images-1.medium.com/max/800/1*ytRsXnjUIdbvycyeZZg6hA.png">
+
 Tack-Stack:
 
-a.HTML (structuring)
+    a.HTML (structuring)
 
-b.CSS (styling)
+    b.CSS (styling)
 
-c.Advance Javascript & ES6 (functionality)
+    c.Advance Javascript & ES6 (functionality)
 
-d.Bootstarp 5 (Modal)
+    d.Bootstarp 5 (Modal)
 
 Glimpse and Screenshots of our cloned website:
 
@@ -128,22 +130,22 @@ A video link for an explanation of a Small Part of the Website:
 
     Linkedin: https://www.linkedin.com/in/dev-ashish-saurabh/
 
-    Contribution:
+    1.Contribution:
 
-    Creation of functional Navigation bar which includes the hovering, Popup, and routing.
+    2.Creation of functional Navigation bar which includes the hovering, Popup, and routing.
 
-    Creation of Footer which includes the hovering and routing.
+    3.Creation of Footer which includes the hovering and routing.
 
-    Create a Full Landing Page With All functionality.
+    4.Create a Full Landing Page With All functionality.
 
-    Enabled functionalities with extensive use of JavaScript.
+    5.Enabled functionalities with extensive use of JavaScript.
 
-    Integrated all the pages with functionality to deliver a seamless experience to the user.
+    6.Integrated all the pages with functionality to deliver a seamless experience to the user.
 
-    Most Importantly assessment of team members' daily schedule tasks,
+    7.Most Importantly assessment of team members' daily schedule tasks,
     daily morning scrum for dividing the task, taking daily assessment reports jointly contributing with team members @Rajashree Chakraborty, @Aman Jha,@Gaurav Singh, and @Nirmal Patel, and arranging team meetings to rectify and fix the bugs.
 
-    I've also managed the team and project as a Leader.
+    8.I've also managed the team and project as a Leader.
 
     My most satisfying contribution was building a transparent, inclusive, and very effective communication environment for my teammates.
 
@@ -155,17 +157,17 @@ A video link for an explanation of a Small Part of the Website:
 
     Contribution:
 
-    Creation of the signup page and linking it to the signup modal.
+    1.Creation of the signup page and linking it to the signup modal.
 
-    Implementation of the signup process with the help of JavaScript and saving the signup data using local storage.
+    2.Implementation of the signup process with the help of JavaScript and saving the signup data using local storage.
 
-    Creation of signup popup (modal) using bootstrap which is linked to the navbar.
+    3.Creation of signup popup (modal) using bootstrap which is linked to the navbar.
 
-    Creation of the login popup (modal) which is linked to the navbar.
+    4.Creation of the login popup (modal) which is linked to the navbar.
 
-    Implementation of the login process using Javascript with the help of the data stored in local storage and also showing the name of the person logged in, on the navbar.
+    5.Implementation of the login process using Javascript with the help of the data stored in local storage and also showing the name of the person logged in, on the       navbar.
 
-    Directory page, showing the food menu.
+    6.Directory page, showing the food menu.
 
 <br>
 
@@ -175,9 +177,9 @@ A video link for an explanation of a Small Part of the Website:
 
     Contribution:
 
-    Creation of the Hot pick & Recipes Page which is linked to the navbar.
+    1.Creation of the Hot pick & Recipes Page which is linked to the navbar.
 
-    Also, I have solved some of the bugs.
+    2.Also, I have solved some of the bugs.
 
 
 <br>
@@ -189,9 +191,9 @@ A video link for an explanation of a Small Part of the Website:
 
     Contribution:
 
-    Creation of the Meal Deal with next and previous button functionality & KindMoment Page which is linked to the navbar.
+    1.Creation of the Meal Deal with next and previous button functionality & KindMoment Page which is linked to the navbar.
 
-    Also, I have solved some of the bugs.
+    2.Also, I have solved some of the bugs.
 
 <br>
 
