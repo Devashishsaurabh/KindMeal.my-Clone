@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KindMeal.my</title>
+    <link rel="shortcut icon" href="https://www.kindmeal.my/favicon.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous" ></script>
+<link rel="stylesheet" href="./component/navbar.css">
+<link rel="stylesheet" href="./component/footer.css">
     <style>
         #container{
    width: 55%;
    height: auto; 
    margin: auto;
    display: flex;
+   margin-top: 15px;
   /* border: 1px solid rgb(162, 227, 21); */
  }
  #container1{
@@ -39,14 +56,18 @@ padding-bottom: 20px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
             border-radius: 5px;
         }
-        img{
+        #images{
             margin-top: 10px;
             width: 80%;
             height: 90%;
         }
-        a{
+        #container a{
            font-size: 15px;
-           color: rgba(12, 12, 12, 0.875);
+           color: black;
+           text-decoration: none;
+       }
+       #container a:hover{
+           text-decoration: underline;
        }
         .mrc1{
             width: 35%;
@@ -66,42 +87,48 @@ padding-bottom: 20px;
     </style>
 </head>
 <body>
+    <header id="navbar"></header>
+    <!-- ---------Second Navbar---------- -->
+    <header id="navbar2"></header>
+    <!-- ------second navbar end--------- -->
     <div id="container">
         <div id="container1">
             <div id="box1">
-                <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+                <img id="images"src="https://www.kindmeal.my/images/join_normal.png" alt="">
                 <div><a href="general.html">General Help</a></div>
             </div>
             <div id="box2">
-                <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
-               <div> <a href="marchent.html">Marchent Help</a></div>
+                <img id="images"src="https://www.kindmeal.my/images/join_shop.png" alt="">
+                <div> <a href="marchent.html">Merchent Help</a></div>
             </div>
             <div id="box3">
-                <img src="https://www.kindmeal.my/images/icon-megaphone.png" alt="">
+                <img id="images"src="https://www.kindmeal.my/images/icon-megaphone.png" alt="">
                <div> <a href="advertisement.html">Advertising</a></div>
             </div>
             <div id="box4">
-                <img src="https://www.kindmeal.my/images/about_us.png" alt="">
+                <img id="images"src="https://www.kindmeal.my/images/about_us.png" alt="">
                 <div><a href="aboutkindmeel.html">About kindmeal</a></div>
             </div>
             <div id="box5">
-                <img src="https://www.kindmeal.my/images/about_hero.png" alt="">
+                <img id="images"src="https://www.kindmeal.my/images/about_hero.png" alt="">
                 <div><a href="superhero.html">Superhero Guid</a></div>
             </div>
             <div id="box6">
-                <img src="https://www.kindmeal.my/images/contact.png" alt="">
+                <img id="images"src="https://www.kindmeal.my/images/contact.png" alt="">
                <div> <a href="contact.html">contact us</a></div>
             </div>
           </div>
           <div>
             <div id="marchent">
-                <div class="mrc1">  <img src="https://www.kindmeal.my/images/error.png" alt=""></div>
+                <div class="mrc1">  <img id="images"src="https://www.kindmeal.my/images/error.png" alt=""></div>
                 <div class="mrc2">  <q>	Login Required</q>
                   <p>Please login to your Merchant Account first to access the help section</p>
               </div>
               </div>
           </div>
     </div>
- 
+    <div id="footer"></div>
+    <div id="bigfooter"></div>
 </body>
 </html>
+<script src="./scripts/marchent.js" type="module"></script>

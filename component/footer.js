@@ -13,7 +13,7 @@ function bigfooter(){
       <p><a href="signup.html">Sign Up</a></p>
       <p><a href="https://www.kindmeal.my/businesses.htm">Business / Restaurateurs</a></p>
       <p><a href="">Advertising</a></p>
-      <p><a href="">About KindMeal.my</a></p>
+      <p><a href="aboutkindmeel.html">About KindMeal.my</a></p>
       <p><a href="">Help & FAQ</a></p>
       <p><a href="">Terms & Conditions</a></p>
       <p><a href="">Inspiring Partners</a></p>

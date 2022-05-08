@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Become A Superhero</title>
+    <link rel="shortcut icon" href="https://www.kindmeal.my/favicon.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous" ></script>
+<link rel="stylesheet" href="./component/navbar.css">
+<link rel="stylesheet" href="./component/footer.css">
     <style>
          #container{
             width: 60%;
@@ -30,7 +46,7 @@
           border-radius: 10px;
           margin-top: 15px;
           padding: 10px 10px 10px 10px;
-          font-size: 10px;
+          font-size: 16px;
         }
         #box{
             width: 95%;
@@ -44,15 +60,18 @@
             margin-top: 15px;
             border-radius: 5px;
         }
-        img{
+        #images{
             width: 80%;
             margin-top: 15px;
         }
-        a{
-            font-size: 13px;
-
-           
-        }
+        #container a{
+           font-size: 15px;
+           color: black;
+           text-decoration: none;
+       }
+       #container a:hover{
+           text-decoration: underline;
+       }
         #box1{
             text-align: center;
 
@@ -77,16 +96,13 @@
             /* text-align: center; */
            
         }
-        button{
+        #sig{
             text-align: center;
-            /* width: 30px; */
-            height: auto;
-            margin: auto;
-            justify-content: center;
             background-color: green;
             color: aliceblue;
             border: 0px;
-            font-size: 20px;
+            padding:0px 5px 3px 5px;
+            font-size: 22px;
             border-radius: 5px;
             margin-top: 10px;
         }
@@ -99,30 +115,34 @@
     
 </head>
 <body>
+    <header id="navbar"></header>
+    <!-- ---------Second Navbar---------- -->
+    <header id="navbar2"></header>
+    <!-- ------second navbar end--------- -->
     <div id="container">
         <div id="container1">
                <div id="box">
-                 <div><img src="https://www.kindmeal.my/images/join_normal.png" alt=""></div>
+                 <div><img id="images"src="https://www.kindmeal.my/images/join_normal.png" alt=""></div>
                   <div><a href="general.html">General Help</a></div>
              </div>
               <div id="box">
-                   <div>  <img src="https://www.kindmeal.my/images/join_shop.png" alt=""></div>
-                   <div> <a href="marchent.html">Marchent Help</a></div>
+                   <div>  <img id="images" src="https://www.kindmeal.my/images/join_shop.png" alt=""></div>
+                   <div> <a href="marchent.html">Merchent Help</a></div>
               </div>
              <div id="box">
-                  <div> <img src="https://www.kindmeal.my/images/icon-megaphone.png" alt=""></div>
+                  <div> <img id="images"src="https://www.kindmeal.my/images/icon-megaphone.png" alt=""></div>
                   <div> <a href="advertisement.html">Advertising</a></div>
              </div>
               <div id="box">
-                   <div><img src="https://www.kindmeal.my/images/about_us.png" alt=""></div>
+                   <div><img id="images"src="https://www.kindmeal.my/images/about_us.png" alt=""></div>
                    <div><a href="aboutkindmeel.html">About kindmeal</a></div>
               </div>
               <div id="box">
-                  <div>  <img src="https://www.kindmeal.my/images/about_hero.png" alt=""></div>
+                  <div>  <img id="images"src="https://www.kindmeal.my/images/about_hero.png" alt=""></div>
                    <div><a href="superhero.html">Superhero Guid</a></div>
                </div>
                <div id="box">
-                    <div> <img src="https://www.kindmeal.my/images/contact.png" alt=""></div>
+                    <div> <img id="images"src="https://www.kindmeal.my/images/contact.png" alt=""></div>
                    <div> <a href="contact.html">contact us</a></div>
                 </div>
           
@@ -130,7 +150,7 @@
         <div id="container2">
             <h3>The Superhero Guide</h3>
             <div id="box1">
-                <div><img src="https://www.kindmeal.my/images/about-hero-1.jpg" alt=""></div>
+                <div><img id="images" style="width:100%"src="https://www.kindmeal.my/images/about-hero-1.jpg" alt=""></div>
               </div>
           <h4>Become A Superhero</h4>
            <p>You don't need to envy the Superheroes in movies anymore. Now, YOU can become a real Superhero too and save lives!
@@ -144,7 +164,7 @@
         <p>Winners can select from any one of the following Superhero designs, subject to availability. Gift will be posted to winner free of charge.</p>
 
         <div id="box1">
-            <div><img src="https://www.kindmeal.my/images/contests/xmas2014/superhero_gifts.jpg" alt=""></div>
+            <div><img id="images" style="width:100%"src="https://www.kindmeal.my/images/contests/xmas2014/superhero_gifts.jpg" alt=""></div>
           </div>
           <h4>The Superhero Ranks</h4>
           <p>There are a range of Superheroes you can transform into, depending on your Experience Points. The top ranks will also receive a Superhero Medal that will be displayed on your profile and headshot at various locations.
@@ -155,7 +175,7 @@
         <li>Power Level: Determined by the Experience Points (XP) earned over the past 30 days. Each KindMeal activity generates a certain number of points (more details at Earning Experience Points section)</li>
         <li>Superhero Rank: Current Superhero rank, determined by the Power Level. You will also receive a Superhero Medal when you achieve the Top 3 Levels, displayed on your profile and headshot at various locations. You can also share (a.k.a. show off) your achieved Superhero rank on social media.</li>
         <div id="box1">
-            <div><img src="https://www.kindmeal.my/images/about-hero-2.jpg" alt=""></div>
+            <div><img id="images"style="width:100%" src="https://www.kindmeal.my/images/about-hero-2.jpg" alt=""></div>
           </div>
           <h4>Earning Experience Points</h4>
           <li>Deals (50 - 100 XP): You will earn 50 XP for every KindMeal deal used, or 100 XP for featured deals.</li>
@@ -169,27 +189,27 @@
           <p>Here are some of the top Superheroes actively saving lives on KindMeal. Bravo for their kindness and courage!</p>
          <div id="box2">
              <div>
-              <img src="https://www.kindmeal.my/photos/member/39/39963-s.jpg" alt="">
+              <img id="images"src="https://www.kindmeal.my/photos/member/39/39963-s.jpg" alt="">
               <p>EugeneLaiEuJin</p>
              </div>
              <div>
-                 <img src="https://www.kindmeal.my/images/default_female-s.jpg" alt="">
+                 <img id="images"src="https://www.kindmeal.my/images/default_female-s.jpg" alt="">
                  <p>Yewyuen66</p>
              </div>
              <div>
-                 <img src="https://www.kindmeal.my/photos/member/13/13208-s.jpg" alt="">
+                 <img id="images"src="https://www.kindmeal.my/photos/member/13/13208-s.jpg" alt="">
                  <p>VyVian</p>
              </div>
              <div>
-                 <img src="https://www.kindmeal.my/photos/member/16/16140-s.jpg" alt="">
+                 <img id="images"src="https://www.kindmeal.my/photos/member/16/16140-s.jpg" alt="">
                  <p>KenixKua</p>
              </div>
              <div>
-                <img src="https://www.kindmeal.my/photos/member/32/32878-s.jpg" alt="">
+                <img id="images"src="https://www.kindmeal.my/photos/member/32/32878-s.jpg" alt="">
                 <p>AppleChan</p>
             </div>
             <div>
-                <img src="https://www.kindmeal.my/photos/member/24/24824-s.jpg" alt="">
+                <img id="images"src="https://www.kindmeal.my/photos/member/24/24824-s.jpg" alt="">
                 <p>YawPeyJiun</p>
             </div>
 
@@ -198,11 +218,14 @@
             Credits: Minion superhero illustrations are the creations of Kevin Lam.</p>
       
        <div id="superhero"> <q >Be A Superhero Now. May The Force Be With You.</q>
-        <div><button>sign up now</button></div>
+        <div><button id="sig"><a style="color:white;text-decoration: none;" href="signup.html">sign up now</a></button></div>
         </div>
         
        </div>
         </div>
     </div>
+    <div id="footer"></div>
+    <div id="bigfooter"></div>
 </body>
 </html>
+<script src="./scripts/advertisement.js" type="module"></script>

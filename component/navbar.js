@@ -166,8 +166,8 @@ function navbar2() {
     <div><a href="hotpicks.html">Hot Picks</a></div>
     <div><a href="recipes.html">Recipes</a></div>
     <div><a href="directory.html">Directory</a></div>
-    <div><a href="">Articles</a></div>
-    <div><a href="">Help</a></div>
+    <div><a href="artical.html">Articles</a></div>
+    <div><a href="general.html">Help</a></div>
   </div>`
 }
 export { navbar, navbar2 }

@@ -3,6 +3,7 @@
     height: auto; 
     margin: auto;
     display: flex;
+    margin-top: 15px;
    /* border: 1px solid rgb(162, 227, 21); */
   
  
@@ -19,7 +20,7 @@
     border-radius: 10px;
  }
  
- img{
+ #images{
     width: 70%;
     margin: auto;
     /* background-color: black; */
@@ -56,12 +57,16 @@
  
  }
  p{
-    font-size: 13px;
+    font-size: 16px;
  }
  h3{
-    font-size: 13px;
+    font-size: 14px;
  }
- #help a{
-    font-size: 13px;
-    color: rgb(181, 42, 42);
- }
+ #container a{
+   font-size: 15px;
+   color: black;
+   text-decoration: none;
+}
+#container a:hover{
+   text-decoration: underline;
+}
