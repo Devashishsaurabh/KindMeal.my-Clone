@@ -120,9 +120,9 @@ Technically Help is the last page our team developed for the best User Interface
 
 Github Repo LINK: https://github.com/Devashishsaurabh/KindMeal.my-Clone
 
-Github Site Deployment link: 
+Github Site Deployment link: https://devashishsaurabh.github.io/KindMeal.my-Clone/
 
-Netlify Link: 
+Netlify Link: https://lucent-narwhal-b8e29a.netlify.app/
 
 A video link for an explanation of a Small Part of the Website:
 
