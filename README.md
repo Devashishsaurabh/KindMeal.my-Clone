@@ -172,6 +172,8 @@ A video link for an explanation of a Small Part of the Website:
     5.Implementation of the login process using Javascript with the help of the data stored in local storage and also showing the name of the person logged in, on the       navbar.
 
     6.Directory page, showing the food menu.
+    
+    7.I've also managed the team and project as a Co-Leader.
 
 <br>
 
