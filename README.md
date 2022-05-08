@@ -124,7 +124,7 @@ Github Site Deployment link: https://devashishsaurabh.github.io/KindMeal.my-Clo
 
 Netlify Link: https://lucent-narwhal-b8e29a.netlify.app/
 
-A video link for an explanation of a Small Part of the Website:
+A video link for an explanation of a Small Part of the Website: https://drive.google.com/file/d/1-cIDRO9owaDFjPhYs8cLPD-TgPWsdQqS/view?usp=sharing
 
 ‣ Acclaim for team members' Contributions:
 
