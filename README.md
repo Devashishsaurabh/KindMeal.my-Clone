@@ -105,10 +105,12 @@ on the page, Users see the categories option and some Pictures of Food.
 
 On Article Page User See some Yummy News, Articles & Videos that are posted by KindMeal.my.
 
-
+<img src="https://cdn-images-1.medium.com/max/800/1*mgewOM0Q6Xm2YxMQoL3XbQ.png">
 🅙Help
 
 On the Help Section, users get multiple options for help just like advertising help, General Help, Contact Us, etc.
+
+<img src="https://cdn-images-1.medium.com/max/800/1*NUjw_7UDIn0c-zyP1lCYBQ.png">
 
 Technically Help is the last page our team developed for the best User Interface UI smooth Operations.
 
@@ -170,6 +172,8 @@ A video link for an explanation of a Small Part of the Website:
     5.Implementation of the login process using Javascript with the help of the data stored in local storage and also showing the name of the person logged in, on the       navbar.
 
     6.Directory page, showing the food menu.
+    
+    7.I've also managed the team and project as a Co-Leader.
 
 <br>
 
@@ -204,3 +208,7 @@ A video link for an explanation of a Small Part of the Website:
     Linkedin:
 
     Contribution:
+    
+    Creation of the Articles page & Help Page with All Sections which is linked to the navbar.
+    
+    Also, I have solved some of the bugs.
