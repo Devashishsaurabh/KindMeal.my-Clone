@@ -124,6 +124,8 @@ Github Site Deployment link: https://devashishsaurabh.github.io/KindMeal.my-Clo
 
 Netlify Link: https://lucent-narwhal-b8e29a.netlify.app/
 
+Blog Link: https://medium.com/@onlyvishwasindia/project-kindmeal-my-clone-648e86d3e588
+
 A video link for an explanation of a Small Part of the Website: https://drive.google.com/file/d/1-cIDRO9owaDFjPhYs8cLPD-TgPWsdQqS/view?usp=sharing
 
 ‣ Acclaim for team members' Contributions:
