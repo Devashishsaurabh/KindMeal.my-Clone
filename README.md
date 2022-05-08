@@ -22,7 +22,7 @@ We tried our best to clone the website from scratch based on the knowledge gaine
 
 <img src="https://cdn-images-1.medium.com/max/800/1*ytRsXnjUIdbvycyeZZg6hA.png">
 
-Tack-Stack:
+Tech-Stack:
 
     a.HTML (structuring)
 
