@@ -115,27 +115,27 @@ Glimpse and Screenshots of our cloned website:
 
 Technically Help is the last page our team developed for the best User Interface UI smooth Operations.
 
-##  <- - - - - - - - - - - - - - - - - - - - - - - - - - -Links and Acclaim - - - - - - - - - - - - - - - - - - - - - - - ->
+##  <- - - - - - -  - - - - - - - - - - - - - -Links and Acclaim - - - - - - - - - - - - - - - - - - - - - ->
 
-‣ WebPage deployed link:
+## ‣ WebPage deployed link:
 
-Github Repo LINK: https://github.com/Devashishsaurabh/KindMeal.my-Clone
+- Github Repo LINK: https://github.com/Devashishsaurabh/KindMeal.my-Clone
 
-Github Site Deployment link: https://devashishsaurabh.github.io/KindMeal.my-Clone/
+- Github Site Deployment link: https://devashishsaurabh.github.io/KindMeal.my-Clone/
 
-Netlify Link: https://lucent-narwhal-b8e29a.netlify.app/
+- Netlify Link: https://lucent-narwhal-b8e29a.netlify.app/
 
-Blog Link: https://medium.com/@onlyvishwasindia/project-kindmeal-my-clone-648e86d3e588
+- Blog Link: https://medium.com/@onlyvishwasindia/project-kindmeal-my-clone-648e86d3e588
 
-A video link for an explanation of a Small Part of the Website: https://drive.google.com/file/d/1-cIDRO9owaDFjPhYs8cLPD-TgPWsdQqS/view?usp=sharing
+- A video link for an explanation of a Small Part of the Website: https://drive.google.com/file/d/1-cIDRO9owaDFjPhYs8cLPD-TgPWsdQqS/view?usp=sharing
 
-‣ Acclaim for team members' Contributions:
+## ‣ Acclaim for team members' Contributions:
 
 
 
     ⁍ Dev Ashish Saurabh:
 
-    Linkedin: https://www.linkedin.com/in/dev-ashish-saurabh/
+    - Linkedin: https://www.linkedin.com/in/dev-ashish-saurabh/
 
     1.Contribution:
 
@@ -160,7 +160,7 @@ A video link for an explanation of a Small Part of the Website: https://drive.go
 
     ⁍ Rajashree Chakraborty:
 
-    Linkedin: https://www.linkedin.com/in/rajashree-chakraborty-715a631b8
+    - Linkedin: https://www.linkedin.com/in/rajashree-chakraborty-715a631b8
 
     Contribution:
 
